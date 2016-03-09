@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="ionic/css/ionic.css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+
+ <!-- <body ng-app="myappsApp"> 采用手动启动angularjs应用 不需要添加ng-app-->
+  <body>
+<!--
+    &lt;!&ndash;[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]&ndash;&gt;
+
+    &lt;!&ndash; Add your site or application content here &ndash;&gt;
+     <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#main">myapps</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+
+              <li class="active"><a ui-sref="test"  ui-sref-opts="{reload: true}"  >Home</a></li>
+              <li><a ui-sref="about" ui-sref-opts="{reload: true}"  >About</a></li>
+               <li><a   ui-sref="test" ui-sref-opts="{reload: true}" >Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div ui-view="view_center" class="main-center"></div>
+      <div ui-view="about" class="main-center"></div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      </div>
+    </div>
+-->
+
+<div ui-view="view_center" class="main-center"></div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+
+    <!--<script src="bower_components/jquery/dist/jquery.js"></script>-->
+    <!--<script src="bower_components/angular/angular.js"></script>-->
+    <!--<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>-->
+    <!--<script src="bower_components/angular-animate/angular-animate.js"></script>-->
+    <!--<script src="bower_components/angular-cookies/angular-cookies.js"></script>-->
+    <!--<script src="bower_components/angular-resource/angular-resource.js"></script>-->
+    <!--<script src="bower_components/angular-route/angular-route.js"></script>-->
+    <!--<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>-->
+    <!--<script src="bower_components/angular-touch/angular-touch.js"></script>-->
+    <!--<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>-->
+    <!--<script src="bower_components/requirejs/require.js"></script>-->
+
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <!--   <script src="scripts/app.js"></script>
+      <script src="scripts/controllers/main.js"></script>
+      <script src="scripts/controllers/about.js"></script>
+      <script src="scripts/directives/mudirective.js"></script>
+      <script src="scripts/filters/myfilter.js"></script>
+      <script src="scripts/services/myservice.js"></script>
+      <script src="scripts/decorators/servicenamedecorator.js"></script>-->
+        <!-- endbuild -->
+    <!--<script src="ionic/js/ionic.bundle.js"></script>-->
+    <script src="../bower_components/requirejs/require.js" data-main="main.js"></script>
+
+ </body>
+</html>
